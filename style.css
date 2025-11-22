@@ -1,0 +1,56 @@
+/* ------------------------------------------- */
+/* CSS global */
+/* ------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Couleur de fond Bootstrap light */
+}
+
+/* ------------------------------------------- */
+/* Section Héros */
+/* ------------------------------------------- */
+.hero-placeholder {
+    /* Image de fond pour un look plus attrayant */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/boutique.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Hauteur relative pour les grands écrans */
+}
+
+/* Style personnalisé pour le bouton de la section héros */
+.custom-btn {
+    background-color: #e74c3c !important; /* Rouge/Couleur d'accent */
+    border-color: #e74c3c !important;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #c0392b !important;
+}
+
+/* ------------------------------------------- */
+/* Section Produits */
+/* ------------------------------------------- */
+
+/* Assure que toutes les images de produit ont la même taille et ne sont pas déformées */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Style pour l'effet de survol (facultatif mais attrayant) */
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* ------------------------------------------- */
+/* RESPONSIVITÉ - Media Queries (Minimale grâce à Bootstrap) */
+/* ------------------------------------------- */
+
+/* Exemple de Media Query pour ajuster la hauteur du héros sur très petits écrans */
+@media (max-width: 576px) {
+    .hero-placeholder {
+        height: 50vh; /* Réduit la hauteur sur mobile */
+    }
+}
